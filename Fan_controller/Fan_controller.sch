@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Fan_controller-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -27,56 +28,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5C6DBDD7
-P 1850 1150
-F 0 "J1" H 1930 1142 50  0000 L CNN
-F 1 "Conn_01x04" H 1930 1051 50  0000 L CNN
-F 2 "Fan_control_pro_lib:8981" H 1850 1150 50  0001 C CNN
-F 3 "~" H 1850 1150 50  0001 C CNN
-	1    1850 1150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J2
-U 1 1 5C6DC199
-P 1850 1650
-F 0 "J2" H 1930 1642 50  0000 L CNN
-F 1 "Conn_01x04" H 1930 1551 50  0000 L CNN
-F 2 "Fan_control_pro_lib:8981" H 1850 1650 50  0001 C CNN
-F 3 "~" H 1850 1650 50  0001 C CNN
-	1    1850 1650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J3
-U 1 1 5C6DC20C
-P 1850 2150
-F 0 "J3" H 1930 2142 50  0000 L CNN
-F 1 "Conn_01x04" H 1930 2051 50  0000 L CNN
-F 2 "Fan_control_pro_lib:8981" H 1850 2150 50  0001 C CNN
-F 3 "~" H 1850 2150 50  0001 C CNN
-	1    1850 2150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J4
-U 1 1 5C6DC266
-P 1850 2650
-F 0 "J4" H 1930 2642 50  0000 L CNN
-F 1 "Conn_01x04" H 1930 2551 50  0000 L CNN
-F 2 "Fan_control_pro_lib:8981" H 1850 2650 50  0001 C CNN
-F 3 "~" H 1850 2650 50  0001 C CNN
-	1    1850 2650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J5
-U 1 1 5C6DC2D7
-P 1850 3150
-F 0 "J5" H 1930 3142 50  0000 L CNN
-F 1 "Conn_01x04" H 1930 3051 50  0000 L CNN
-F 2 "Fan_control_pro_lib:8981" H 1850 3150 50  0001 C CNN
-F 3 "~" H 1850 3150 50  0001 C CNN
-	1    1850 3150
+P 1200 950
+F 0 "J1" H 1280 942 50  0000 L CNN
+F 1 "Conn_01x04" H 1280 851 50  0000 L CNN
+F 2 "Fan_control_pro_lib:8981" H 1200 950 50  0001 C CNN
+F 3 "~" H 1200 950 50  0001 C CNN
+	1    1200 950 
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -266,7 +223,7 @@ L Device:R R1
 U 1 1 5C6E86C0
 P 4050 5700
 F 0 "R1" H 4120 5746 50  0000 L CNN
-F 1 "R" H 4120 5655 50  0000 L CNN
+F 1 "1K" H 4120 5655 50  0000 L CNN
 F 2 "" V 3980 5700 50  0001 C CNN
 F 3 "~" H 4050 5700 50  0001 C CNN
 	1    4050 5700
@@ -342,4 +299,268 @@ Text Label 3900 2700 0    50   ~ 0
 OSC_8_OUT
 Wire Wire Line
 	3950 1300 4450 1300
+$Comp
+L Transistor_FET:IRLZ44N Q1
+U 1 1 5C717791
+P 2250 1050
+F 0 "Q1" H 2455 1096 50  0000 L CNN
+F 1 "IRLZ44N" H 2455 1005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2500 975 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 2250 1050 50  0001 L CNN
+	1    2250 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1400 850  1700 850 
+Wire Wire Line
+	1400 1150 1700 1150
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5C71AB58
+P 1200 1500
+F 0 "J2" H 1280 1492 50  0000 L CNN
+F 1 "Conn_01x04" H 1280 1401 50  0000 L CNN
+F 2 "Fan_control_pro_lib:8981" H 1200 1500 50  0001 C CNN
+F 3 "~" H 1200 1500 50  0001 C CNN
+	1    1200 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1400 1700 1400
+Wire Wire Line
+	1400 1700 1700 1700
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5C71B678
+P 1200 2050
+F 0 "J3" H 1280 2042 50  0000 L CNN
+F 1 "Conn_01x04" H 1280 1951 50  0000 L CNN
+F 2 "Fan_control_pro_lib:8981" H 1200 2050 50  0001 C CNN
+F 3 "~" H 1200 2050 50  0001 C CNN
+	1    1200 2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1950 1700 1950
+Wire Wire Line
+	1400 2250 1700 2250
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 5C71C3D4
+P 1200 2600
+F 0 "J4" H 1280 2592 50  0000 L CNN
+F 1 "Conn_01x04" H 1280 2501 50  0000 L CNN
+F 2 "Fan_control_pro_lib:8981" H 1200 2600 50  0001 C CNN
+F 3 "~" H 1200 2600 50  0001 C CNN
+	1    1200 2600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2500 1700 2500
+Wire Wire Line
+	1400 2800 1700 2800
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5C71D3AE
+P 1200 3150
+F 0 "J5" H 1280 3142 50  0000 L CNN
+F 1 "Conn_01x04" H 1280 3051 50  0000 L CNN
+F 2 "Fan_control_pro_lib:8981" H 1200 3150 50  0001 C CNN
+F 3 "~" H 1200 3150 50  0001 C CNN
+	1    1200 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3050 1700 3050
+Wire Wire Line
+	1400 3350 1700 3350
+$Comp
+L Transistor_FET:IRLZ44N Q5
+U 1 1 5C7290CF
+P 2250 3250
+F 0 "Q5" H 2455 3296 50  0000 L CNN
+F 1 "IRLZ44N" H 2455 3205 50  0000 L TNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2500 3175 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 2250 3250 50  0001 L CNN
+	1    2250 3250
+	0    -1   -1   0   
+$EndComp
+Text Label 1700 850  2    50   ~ 0
++12v
+Text Label 1700 1400 2    50   ~ 0
++12v
+Text Label 1700 1950 2    50   ~ 0
++12v
+Text Label 1700 2500 2    50   ~ 0
++12v
+Text Label 1700 3050 2    50   ~ 0
++12v
+Wire Wire Line
+	1400 950  2050 950 
+Wire Wire Line
+	2450 950  2650 950 
+$Comp
+L Transistor_FET:IRLZ44N Q2
+U 1 1 5C7407E9
+P 2250 1600
+F 0 "Q2" H 2455 1646 50  0000 L CNN
+F 1 "IRLZ44N" H 2455 1555 50  0000 L TNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2500 1525 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 2250 1600 50  0001 L CNN
+	1    2250 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRLZ44N Q3
+U 1 1 5C74157B
+P 2250 2150
+F 0 "Q3" H 2455 2196 50  0000 L CNN
+F 1 "IRLZ44N" H 2455 2105 50  0000 L TNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2500 2075 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 2250 2150 50  0001 L CNN
+	1    2250 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRLZ44N Q4
+U 1 1 5C7422F9
+P 2250 2700
+F 0 "Q4" H 2455 2746 50  0000 L CNN
+F 1 "IRLZ44N" H 2455 2655 50  0000 L TNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2500 2625 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 2250 2700 50  0001 L CNN
+	1    2250 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 1500 2650 1500
+Wire Wire Line
+	2650 1500 2650 2050
+Wire Wire Line
+	2650 950  2650 1500
+Connection ~ 2650 1500
+Wire Wire Line
+	2450 2050 2650 2050
+Connection ~ 2650 2050
+Wire Wire Line
+	2650 2050 2650 2600
+Wire Wire Line
+	2450 2600 2650 2600
+Connection ~ 2650 2600
+Wire Wire Line
+	1400 1500 2050 1500
+Wire Wire Line
+	1400 2050 2050 2050
+Wire Wire Line
+	1400 2600 2050 2600
+Wire Wire Line
+	2650 2600 2650 3150
+Wire Wire Line
+	1400 3150 2050 3150
+Wire Wire Line
+	2450 3150 2650 3150
+$Comp
+L power:+12V #PWR013
+U 1 1 5C750BC6
+P 3200 700
+F 0 "#PWR013" H 3200 550 50  0001 C CNN
+F 1 "+12V" H 3215 873 50  0000 C CNN
+F 2 "" H 3200 700 50  0001 C CNN
+F 3 "" H 3200 700 50  0001 C CNN
+	1    3200 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 700  3200 900 
+Text Label 3200 900  1    50   ~ 0
++12v
+$Comp
+L power:GNDREF #PWR012
+U 1 1 5C75508F
+P 2650 3350
+F 0 "#PWR012" H 2650 3100 50  0001 C CNN
+F 1 "GNDREF" H 2655 3177 50  0000 C CNN
+F 2 "" H 2650 3350 50  0001 C CNN
+F 3 "" H 2650 3350 50  0001 C CNN
+	1    2650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR011
+U 1 1 5C75523C
+P 1700 3350
+F 0 "#PWR011" H 1700 3100 50  0001 C CNN
+F 1 "GNDREF" H 1705 3177 50  0000 C CNN
+F 2 "" H 1700 3350 50  0001 C CNN
+F 3 "" H 1700 3350 50  0001 C CNN
+	1    1700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR010
+U 1 1 5C75683F
+P 1700 2800
+F 0 "#PWR010" H 1700 2550 50  0001 C CNN
+F 1 "GNDREF" H 1705 2627 50  0000 C CNN
+F 2 "" H 1700 2800 50  0001 C CNN
+F 3 "" H 1700 2800 50  0001 C CNN
+	1    1700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR09
+U 1 1 5C757E42
+P 1700 2250
+F 0 "#PWR09" H 1700 2000 50  0001 C CNN
+F 1 "GNDREF" H 1705 2077 50  0000 C CNN
+F 2 "" H 1700 2250 50  0001 C CNN
+F 3 "" H 1700 2250 50  0001 C CNN
+	1    1700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR08
+U 1 1 5C7595FA
+P 1700 1700
+F 0 "#PWR08" H 1700 1450 50  0001 C CNN
+F 1 "GNDREF" H 1705 1527 50  0000 C CNN
+F 2 "" H 1700 1700 50  0001 C CNN
+F 3 "" H 1700 1700 50  0001 C CNN
+	1    1700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR07
+U 1 1 5C75ABFD
+P 1700 1150
+F 0 "#PWR07" H 1700 900 50  0001 C CNN
+F 1 "GNDREF" H 1705 977 50  0000 C CNN
+F 2 "" H 1700 1150 50  0001 C CNN
+F 3 "" H 1700 1150 50  0001 C CNN
+	1    1700 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3450 2000 3450
+Wire Wire Line
+	2250 2900 2000 2900
+Wire Wire Line
+	2250 2350 2000 2350
+Wire Wire Line
+	2250 1800 2000 1800
+Wire Wire Line
+	2250 1250 2000 1250
+Text Label 2000 3450 0    50   ~ 0
+CH5
+Text Label 2000 2900 0    50   ~ 0
+CH4
+Text Label 2000 2350 0    50   ~ 0
+CH3
+Text Label 2000 1800 0    50   ~ 0
+CH2
+Text Label 2000 1250 0    50   ~ 0
+CH1
+Wire Wire Line
+	2650 3350 2650 3150
+Connection ~ 2650 3150
 $EndSCHEMATC
