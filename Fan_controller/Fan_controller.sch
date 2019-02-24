@@ -53,20 +53,6 @@ Connection ~ 5150 1000
 Wire Wire Line
 	5150 1000 5250 1000
 Wire Wire Line
-	5050 1000 5050 850 
-Connection ~ 5050 1000
-$Comp
-L power:+3.3V #PWR04
-U 1 1 5C6DCAD2
-P 5050 850
-F 0 "#PWR04" H 5050 700 50  0001 C CNN
-F 1 "+3.3V" H 5065 1023 50  0000 C CNN
-F 2 "" H 5050 850 50  0001 C CNN
-F 3 "" H 5050 850 50  0001 C CNN
-	1    5050 850 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	4950 4700 4950 4800
 Wire Wire Line
 	4950 4800 5050 4800
@@ -251,17 +237,6 @@ F 3 "" H 4050 6350 50  0001 C CNN
 	1    4050 6350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR01
-U 1 1 5C6E93D5
-P 4050 5550
-F 0 "#PWR01" H 4050 5400 50  0001 C CNN
-F 1 "+3.3V" H 4065 5723 50  0000 C CNN
-F 2 "" H 4050 5550 50  0001 C CNN
-F 3 "" H 4050 5550 50  0001 C CNN
-	1    4050 5550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4050 6050 4050 5950
 Wire Wire Line
@@ -312,8 +287,6 @@ F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 2250 1050 50
 $EndComp
 Wire Wire Line
 	1400 850  1700 850 
-Wire Wire Line
-	1400 1150 1700 1150
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5C71AB58
@@ -327,8 +300,6 @@ F 3 "~" H 1200 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1400 1400 1700 1400
-Wire Wire Line
-	1400 1700 1700 1700
 $Comp
 L Connector_Generic:Conn_01x04 J3
 U 1 1 5C71B678
@@ -342,8 +313,6 @@ F 3 "~" H 1200 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1400 1950 1700 1950
-Wire Wire Line
-	1400 2250 1700 2250
 $Comp
 L Connector_Generic:Conn_01x04 J4
 U 1 1 5C71C3D4
@@ -357,8 +326,6 @@ F 3 "~" H 1200 2600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1400 2500 1700 2500
-Wire Wire Line
-	1400 2800 1700 2800
 $Comp
 L Connector_Generic:Conn_01x04 J5
 U 1 1 5C71D3AE
@@ -372,8 +339,6 @@ F 3 "~" H 1200 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1400 3050 1700 3050
-Wire Wire Line
-	1400 3350 1700 3350
 $Comp
 L Transistor_FET:IRLZ44N Q5
 U 1 1 5C7290CF
@@ -462,17 +427,17 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR013
 U 1 1 5C750BC6
-P 3200 700
-F 0 "#PWR013" H 3200 550 50  0001 C CNN
-F 1 "+12V" H 3215 873 50  0000 C CNN
-F 2 "" H 3200 700 50  0001 C CNN
-F 3 "" H 3200 700 50  0001 C CNN
-	1    3200 700 
+P 3150 700
+F 0 "#PWR013" H 3150 550 50  0001 C CNN
+F 1 "+12V" H 3165 873 50  0000 C CNN
+F 2 "" H 3150 700 50  0001 C CNN
+F 3 "" H 3150 700 50  0001 C CNN
+	1    3150 700 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 700  3200 900 
-Text Label 3200 900  1    50   ~ 0
+	3150 700  3150 900 
+Text Label 3150 900  1    50   ~ 0
 +12v
 $Comp
 L power:GNDREF #PWR012
@@ -483,61 +448,6 @@ F 1 "GNDREF" H 2655 3177 50  0000 C CNN
 F 2 "" H 2650 3350 50  0001 C CNN
 F 3 "" H 2650 3350 50  0001 C CNN
 	1    2650 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR011
-U 1 1 5C75523C
-P 1700 3350
-F 0 "#PWR011" H 1700 3100 50  0001 C CNN
-F 1 "GNDREF" H 1705 3177 50  0000 C CNN
-F 2 "" H 1700 3350 50  0001 C CNN
-F 3 "" H 1700 3350 50  0001 C CNN
-	1    1700 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR010
-U 1 1 5C75683F
-P 1700 2800
-F 0 "#PWR010" H 1700 2550 50  0001 C CNN
-F 1 "GNDREF" H 1705 2627 50  0000 C CNN
-F 2 "" H 1700 2800 50  0001 C CNN
-F 3 "" H 1700 2800 50  0001 C CNN
-	1    1700 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR09
-U 1 1 5C757E42
-P 1700 2250
-F 0 "#PWR09" H 1700 2000 50  0001 C CNN
-F 1 "GNDREF" H 1705 2077 50  0000 C CNN
-F 2 "" H 1700 2250 50  0001 C CNN
-F 3 "" H 1700 2250 50  0001 C CNN
-	1    1700 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR08
-U 1 1 5C7595FA
-P 1700 1700
-F 0 "#PWR08" H 1700 1450 50  0001 C CNN
-F 1 "GNDREF" H 1705 1527 50  0000 C CNN
-F 2 "" H 1700 1700 50  0001 C CNN
-F 3 "" H 1700 1700 50  0001 C CNN
-	1    1700 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR07
-U 1 1 5C75ABFD
-P 1700 1150
-F 0 "#PWR07" H 1700 900 50  0001 C CNN
-F 1 "GNDREF" H 1705 977 50  0000 C CNN
-F 2 "" H 1700 1150 50  0001 C CNN
-F 3 "" H 1700 1150 50  0001 C CNN
-	1    1700 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -563,4 +473,135 @@ CH1
 Wire Wire Line
 	2650 3350 2650 3150
 Connection ~ 2650 3150
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 5C7328D6
+P 9250 1150
+F 0 "J?" H 9330 1192 50  0000 L CNN
+F 1 "ATX_USB" H 9330 1101 50  0000 L CNN
+F 2 "" H 9250 1150 50  0001 C CNN
+F 3 "~" H 9250 1150 50  0001 C CNN
+	1    9250 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 950  8700 950 
+Wire Wire Line
+	9050 1050 8700 1050
+Wire Wire Line
+	9050 1150 8700 1150
+Wire Wire Line
+	9050 1250 8700 1250
+Text Label 8700 950  0    50   ~ 0
++5v
+Text Label 8700 1050 0    50   ~ 0
+D-
+Text Label 8700 1150 0    50   ~ 0
+D+
+Wire Wire Line
+	3350 6150 3350 6350
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5C7403D1
+P 3350 6350
+F 0 "#PWR?" H 3350 6100 50  0001 C CNN
+F 1 "GNDREF" H 3355 6177 50  0000 C CNN
+F 2 "" H 3350 6350 50  0001 C CNN
+F 3 "" H 3350 6350 50  0001 C CNN
+	1    3350 6350
+	1    0    0    -1  
+$EndComp
+Text Label 3350 6150 3    50   ~ 0
+GND
+Text Label 8700 1250 0    50   ~ 0
+GND
+$Comp
+L power:+5V #PWR?
+U 1 1 5C747585
+P 6700 800
+F 0 "#PWR?" H 6700 650 50  0001 C CNN
+F 1 "+5V" H 6715 973 50  0000 C CNN
+F 2 "" H 6700 800 50  0001 C CNN
+F 3 "" H 6700 800 50  0001 C CNN
+	1    6700 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 800  6700 1000
+Text Label 6700 1000 1    50   ~ 0
++5v
+Wire Wire Line
+	4050 5300 4050 5550
+Text Label 4050 5300 3    50   ~ 0
++3.3v
+$Comp
+L Regulator_Linear:AMS1117-3.3 U?
+U 1 1 5C75DBFF
+P 7200 1000
+F 0 "U?" H 7200 1242 50  0000 C CNN
+F 1 "AMS1117-3.3" H 7200 1151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7200 1200 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 7300 750 50  0001 C CNN
+	1    7200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1000 6900 1000
+Wire Wire Line
+	7200 1300 7200 1500
+$Comp
+L Device:CP1 C?
+U 1 1 5C765DA1
+P 6700 1250
+F 0 "C?" H 6815 1296 50  0000 L CNN
+F 1 "10uF" H 6815 1205 50  0000 L CNN
+F 2 "" H 6700 1250 50  0001 C CNN
+F 3 "~" H 6700 1250 50  0001 C CNN
+	1    6700 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1000 7650 1000
+$Comp
+L Device:CP1 C?
+U 1 1 5C767DBE
+P 7650 1250
+F 0 "C?" H 7765 1296 50  0000 L CNN
+F 1 "22uF" H 7765 1205 50  0000 L CNN
+F 2 "" H 7650 1250 50  0001 C CNN
+F 3 "~" H 7650 1250 50  0001 C CNN
+	1    7650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1100 7650 1000
+Wire Wire Line
+	6700 1100 6700 1000
+Connection ~ 6700 1000
+Wire Wire Line
+	6700 1400 6700 1500
+Wire Wire Line
+	6700 1500 7200 1500
+Wire Wire Line
+	7200 1500 7650 1500
+Wire Wire Line
+	7650 1500 7650 1400
+Connection ~ 7200 1500
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5C7726A9
+P 7200 1650
+F 0 "#PWR?" H 7200 1400 50  0001 C CNN
+F 1 "GNDREF" H 7205 1477 50  0000 C CNN
+F 2 "" H 7200 1650 50  0001 C CNN
+F 3 "" H 7200 1650 50  0001 C CNN
+	1    7200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1500 7200 1650
+Text Label 7650 1000 2    50   ~ 0
++3.3v
+Text Label 5050 1000 0    50   ~ 0
++3.3v
 $EndSCHEMATC
